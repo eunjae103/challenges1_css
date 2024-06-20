@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png"> 
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Figtree", sans-serif;
+    }
+    .wrap{
+      width: 100%;
+      height: 100vh;
+      background: #F4D04E;
+      display: flex;
+    }
+    .container{
+      width: 380px;
+      height: 640px;
+      background: #fff;
+      border-radius: 20px;
+      padding: 20px;
+      margin:auto;
+      box-shadow: 10px 10px black;
+      border:2px solid black;
+    }
+    img{
+      border-radius: 15px;
+    }
+
+    h2{
+      display: inline-block;
+      font-size: 16px;
+      font-weight: bold;
+      padding:5px 10px;
+      border-radius: 5px;
+      background: #F4D04E;
+      margin: 20px 0 15px 0;
+    }
+    h1{
+      font-size: 24px;
+      font-weight: 800;
+      margin: 20px 0 55px 0;
+    }
+    span{
+      display: block;
+      color: #7F7F7F;
+      line-height : 25px;
+    }
+    .footer{
+      display: flex;
+      margin-top: 90px;
+    }
+    .profile{
+      width: 10%;
+      height: 10%;
+      margin-right: 15px;
+    }
+    h3{
+      font-size: 15px;
+      font-weight: 800;
+      line-height: 35px;
+    }
+    /* .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); } */
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="container">
+      <img src="assets/images/illustration-article.svg" alt="이미지">
+        <div class="content">
+          <h2>Learning</h2>
+          <p>Published 21 Dec 2023</p>
+          <h1>HTML & CSS foundations</h1>
+          <span>These languages are the backbone of every website, defining structure, content, and presentation.</spans>
+        </div>
+        <div class="footer">
+          <img class="profile" src="assets/images/image-avatar.webp" alt="프로필사진" class="img">
+          <h3>Greg Hooper</h3>
+        </div>
+    </div>
+  </div>
+ 
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+</html>
