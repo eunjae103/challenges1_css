@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png"> 
-  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <script src="https://cdn.tailwindcss.com"></script>
   <title>Frontend Mentor | Blog preview card</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -18,76 +18,22 @@
       box-sizing: border-box;
       font-family: "Figtree", sans-serif;
     }
-    .wrap{
-      width: 100%;
-      height: 100vh;
-      background: #F4D04E;
-      display: flex;
-    }
-    .container{
-      width: 380px;
-      height: 640px;
-      background: #fff;
-      border-radius: 20px;
-      padding: 20px;
-      margin:auto;
-      box-shadow: 10px 10px black;
-      border:2px solid black;
-    }
-    img{
-      border-radius: 15px;
-    }
 
-    h2{
-      display: inline-block;
-      font-size: 16px;
-      font-weight: bold;
-      padding:5px 10px;
-      border-radius: 5px;
-      background: #F4D04E;
-      margin: 20px 0 15px 0;
-    }
-    h1{
-      font-size: 24px;
-      font-weight: 800;
-      margin: 20px 0 55px 0;
-    }
-    span{
-      display: block;
-      color: #7F7F7F;
-      line-height : 25px;
-    }
-    .footer{
-      display: flex;
-      margin-top: 90px;
-    }
-    .profile{
-      width: 10%;
-      height: 10%;
-      margin-right: 15px;
-    }
-    h3{
-      font-size: 15px;
-      font-weight: 800;
-      line-height: 35px;
-    }
-    /* .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); } */
   </style>
 </head>
 <body>
-  <div class="wrap">
-    <div class="container">
-      <img src="assets/images/illustration-article.svg" alt="이미지">
-        <div class="content">
-          <h2>Learning</h2>
+  <div class="w-full h-screen bg-yellow-500 flex">
+    <div class="w-[380px] h-[640px] bg-white shadow-[10px_10px_black] m-auto p-5 rounded-[20px] border-2 border-solid border-[black]">
+      <img class="rounded-[15px]" src="assets/images/illustration-article.svg" alt="이미지">
+        <div>
+          <h2 class="inline-block text-base font-bold mt-5 mb-[15px] mx-0 px-2.5 py-[5px] rounded-[5px] bg-yellow-300">Learning</h2>
           <p>Published 21 Dec 2023</p>
-          <h1>HTML & CSS foundations</h1>
-          <span>These languages are the backbone of every website, defining structure, content, and presentation.</spans>
+          <h1 class="text-2xl font-extrabold mt-5 mb-[55px] mx-0;">HTML & CSS foundations</h1>
+          <span class="block text-[#7F7F7F] leading-[25px]">These languages are the backbone of every website, defining structure, content, and presentation.</spans>
         </div>
-        <div class="footer">
-          <img class="profile" src="assets/images/image-avatar.webp" alt="프로필사진" class="img">
-          <h3>Greg Hooper</h3>
+        <div class="flex mt-[90px]">
+          <img class="w-[10%] h-[10%] mr-[15px]" src="assets/images/image-avatar.webp" alt="프로필사진" class="img">
+          <h3 class="text-[15px] font-extrabold leading-[35px]">Greg Hooper</h3>
         </div>
     </div>
   </div>
